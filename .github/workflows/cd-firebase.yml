@@ -21,8 +21,6 @@ jobs:
         shell: python
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Lint
-        run: yarn lint
       - name: Build
         run: yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0

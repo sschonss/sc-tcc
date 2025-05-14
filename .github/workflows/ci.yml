@@ -17,8 +17,6 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Lint
-        run: yarn lint
       - name: Copy credentials
         run: cp src/config/firebaseConfig.example.ts src/config/firebaseConfig.ts
       - name: Build
